@@ -1,0 +1,65 @@
+*, *:before, *:after {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+
+.row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.one-third {
+  width: 33.33%;
+}
+
+.two-third {
+  width: 66.67%;
+}
+
+.one-fourth {
+  width: 25%;
+}
+
+.three-fourth {
+  width: 75%;
+}
+
+.two-fifth {
+  width: 40%;
+}
+
+.three-fifth {
+  width: 60%;
+}
+
+.one-sixth {
+  width: 16.67%;
+}
+
+.one-half,.one-third,.two-third,.three-fourth,.one-fourth,.two-fifth,.three-fifth,.one-sixth {
+  float: left;
+  min-height: 1px;
+  padding: 0 20px;
+}
+/* Mobilon pedig minden 100%-ra ugrik */
+@media only screen and (max-width: 768px) {
+  .center-box  {
+    width: 100%;
+    padding: 5px 15px;
+  }
+  .one-fourth {
+    margin: 0 0 30px 0;
+  }
+  .one-half,.one-third,.two-third,.three-fourth,.one-fourth,.two-fifth,.three-fifth,.one-sixth {
+    position: relative;
+    float: none;
+    width: 100%;
+  }
+}
